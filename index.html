@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahulanshu - Full-Stack Developer | Building Real Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full-Stack Developer building real solutions for real problems. Creator of LPU Timetable Optimizer, AI MCQ Generator, and more. 700+ active users.">
+    <meta name="keywords" content="Full-Stack Developer, React, Next.js, Node.js, JavaScript, TypeScript, Web Developer, Portfolio">
+    <meta name="author" content="Rahulanshu">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Rahulanshu - Full-Stack Developer">
+    <meta property="og:description" content="Building real solutions for real problems. Creator of apps used by 700+ students daily.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rahulanshu.dev">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rahulanshu - Full-Stack Developer">
+    <meta name="twitter:description" content="Building real solutions for real problems. Creator of apps used by 700+ students daily.">
+    <meta name="twitter:creator" content="@rahulanshu06">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- AOS Animation Library -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-card" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Rahulanshu</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-badge">
+                        <i class="fas fa-hand-wave"></i>
+                        <span>Hi, I'm Rahulanshu</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Full-Stack Developer Building <span class="gradient-text">Real Solutions</span> for Real Problems
+                    </h1>
+                    <p class="hero-subtitle">
+                        I don't wait for perfect tools—I build them. From fixing slow university apps to creating free learning platforms, I turn frustrations into functional products.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            <span>View Projects</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/itsrahulanshu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/rahulanshu06" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:RAHULANSHU@icloud.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile Photo Section -->
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <div class="image-decoration"></div>
+                        <img src="assets/profile.jpeg" alt="Rahulanshu - Full Stack Developer" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder" style="display: none;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <!-- Floating Tech Icons -->
+                        <div class="floating-icon icon-1" title="React">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-icon icon-2" title="Node.js">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-icon icon-3" title="JavaScript">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="floating-icon icon-4" title="Code">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Building solutions that matter</p>
+            </div>
+            
+            <div class="about-stats" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Education</h3>
+                        <p>MCA @ LPU (2024-Present)<br>BCA @ IIBM Patna (2022-2025)</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Projects</h3>
+                        <p>3+ Live Production Apps</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Impact</h3>
+                        <p>700+ Active Users</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-text glass-card">
+                    <p>I'm a developer who believes the best code solves real problems. My projects don't start with "what technology should I learn?"—they start with "what's broken that I can fix?"</p>
+                    
+                    <p>Currently pursuing my MCA at Lovely Professional University, Punjab (2024-Present), after completing my BCA from IIBM College, Patna (2022-2025).</p>
+                    
+                    <blockquote>
+                        "I don't build projects for my portfolio—I build solutions for real problems I've faced. Every app I create started as a frustration or a gap I noticed."
+                    </blockquote>
+                    
+                    <p>My development philosophy is straightforward: identify the problem, research why existing solutions fail, build something better, and ship it quickly. I've built timetable apps used by 500+ students, AI-powered study tools, and services that have generated real revenue through smart monetization.</p>
+                </div>
+                
+                <div class="timeline glass-card">
+                    <h3>Timeline</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024-Present</div>
+                        <div class="timeline-content">
+                            <h4>MCA Student</h4>
+                            <p>Lovely Professional University, Punjab</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022-2025</div>
+                        <div class="timeline-content">
+                            <h4>BCA Graduate</h4>
+                            <p>IIBM College, Patna</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real solutions for real problems</p>
+            </div>
+
+            <!-- Project 1: LPU Timetable -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project Screenshot -->
+                <div class="project-image">
+                    <img src="assets/lputimetable.jpg" alt="LPU TimeTable Optimizer Screenshot" onerror="this.style.display='none';">
+                    <div class="project-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>500+ Users</span>
+                    </div>
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="project-title-section">
+                        <h3 class="project-title">LPU TimeTable Optimizer</h3>
+                        <p class="project-subtitle">Fast, Reliable Timetable Access</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://itsrahulanshu.vercel.app/" target="_blank" class="project-link" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/itsrahulanshu" target="_blank" class="project-link" title="Source Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <div class="problem-solution">
+                        <h4>The Problem</h4>
+                        <p>LPU's official mobile app was frustratingly slow. Loading the timetable took 20-30 seconds, with frequent crashes and poor user experience. Students rushing between classes needed quick access to their schedules.</p>
+                        
+                        <h4>My Solution</h4>
+                        <p>I reverse-engineered the university's data API and built a web application that fetches and displays timetables instantly. Clean, fast interface that loads in under 2 seconds with zero bloat.</p>
+                        
+                        <h4>Impact</h4>
+                        <p>500+ students use this daily, experiencing 15x faster performance than the official app. Zero crashes reported since launch.</p>
+                    </div>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Daily Users</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">15x</div>
+                            <div class="stat-label">Faster</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">2s</div>
+                            <div class="stat-label">Load Time</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: AI MCQ Generator -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                <!-- Project Screenshot -->
+                <div class="project-image">
+                    <img src="assets/mcqai.jpg" alt="AI MCQ Generator Screenshot" onerror="this.style.display='none';">
+                    <div class="project-badge">
+                        <i class="fas fa-brain"></i>
+                        <span>5000+ Tests</span>
+                    </div>
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-title-section">
+                        <h3 class="project-title">AI-Powered MCQ Generator</h3>
+                        <p class="project-subtitle">Free, Unlimited Practice Questions</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://chatgptmcq.vercel.app/" target="_blank" class="project-link" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/itsrahulanshu" target="_blank" class="project-link" title="Source Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <div class="problem-solution">
+                        <h4>The Problem</h4>
+                        <p>Students needed extensive MCQ practice before exams, but existing platforms either charged money, had strict question limits, or required expensive subscriptions.</p>
+                        
+                        <h4>My Solution</h4>
+                        <p>Built a web app where students enter any topic and desired number of questions, and AI generates a complete MCQ test instantly. Completely free with no limits or sign-ups required.</p>
+                        
+                        <h4>Impact</h4>
+                        <p>200+ students regularly use this for exam preparation, with 5,000+ tests generated since launch. 87% completion rate shows high engagement.</p>
+                    </div>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">5,000+</div>
+                            <div class="stat-label">Tests</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">87%</div>
+                            <div class="stat-label">Completion</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Temp Mail Service -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                <!-- Project Screenshot -->
+                <div class="project-image">
+                    <img src="assets/temp_mail.jpg" alt="Temporary Email Service Screenshot" onerror="this.style.display='none';">
+                    <div class="project-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Privacy First</span>
+                    </div>
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="project-title-section">
+                        <h3 class="project-title">Temporary Email Service</h3>
+                        <p class="project-subtitle">Disposable Email for Privacy</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/itsrahulanshu" target="_blank" class="project-link" title="Source Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <div class="problem-solution">
+                        <h4>The Problem</h4>
+                        <p>Online privacy is increasingly difficult to maintain. Every website demands an email address, leading to inbox spam, tracking, and security risks.</p>
+                        
+                        <h4>My Solution</h4>
+                        <p>Created a temporary email service where users generate instant disposable email addresses, receive messages in real-time, and maintain privacy without any sign-up process.</p>
+                        
+                        <h4>Impact</h4>
+                        <p>Generated 1,000+ temporary emails daily at peak, successfully monetized through Google AdSense for 6+ months. Helped thousands of users avoid spam.</p>
+                    </div>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">1,000+</div>
+                            <div class="stat-label">Emails/Day</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">Revenue</div>
+                            <div class="stat-label">via AdSense</div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Free</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Email API</span>
+                        <span class="tech-tag">Google AdSense</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="approach">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Building Products, Not Just Projects</h2>
+                <p class="section-subtitle">My development philosophy focuses on creating real solutions for real problems</p>
+            </div>
+
+            <div class="approach-grid">
+                <div class="approach-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="approach-number">01</div>
+                    <h3>Identify Real Problems</h3>
+                    <p>I don't build for the sake of building. Every project starts with a genuine frustration or need I've experienced personally. The LPU timetable app came from waiting 30 seconds every time I needed my schedule. The MCQ generator was born from expensive practice test platforms. Real problems create real motivation.</p>
+                </div>
+
+                <div class="approach-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="approach-number">02</div>
+                    <h3>Research Existing Solutions</h3>
+                    <p>Before writing a single line of code, I study what's already out there. What works? What doesn't? Where are the gaps? For the temporary email service, I tested 10+ existing platforms to understand their limitations before building something better. Good research prevents wasted effort.</p>
+                </div>
+
+                <div class="approach-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="approach-number">03</div>
+                    <h3>Build Fast, Iterate Faster</h3>
+                    <p>Perfect is the enemy of done. I launch MVPs quickly to get real user feedback, then iterate based on actual usage patterns. The MCQ generator started with basic functionality and evolved based on student requests. Speed to market beats perfection in planning.</p>
+                </div>
+
+                <div class="approach-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="approach-number">04</div>
+                    <h3>Focus on Performance</h3>
+                    <p>Users don't care about your tech stack—they care about speed and reliability. Every optimization decision is measured against user experience. The timetable app's 2-second load time isn't accidental; it's the result of deliberate performance-first architecture choices.</p>
+                </div>
+
+                <div class="approach-card glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="approach-number">05</div>
+                    <h3>Make It Sustainable</h3>
+                    <p>Building is just the beginning. I design for maintainability, scalability, and long-term viability. Clean code, proper documentation, and sustainable monetization (like AdSense integration) ensure projects survive beyond the initial excitement. Sustainability enables impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I use to build modern web applications</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript ES6+</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Component Architecture</span>
+                        <span class="skill-tag">Framer Motion</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                    </div>
+                    <p>Building fast, responsive, and user-friendly interfaces with modern frameworks and best practices. Focus on component reusability and performance optimization.</p>
+                </div>
+
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">Authentication & Authorization</span>
+                        <span class="skill-tag">Serverless Functions</span>
+                        <span class="skill-tag">Database Management</span>
+                        <span class="skill-tag">Error Handling</span>
+                        <span class="skill-tag">Security Best Practices</span>
+                    </div>
+                    <p>Creating robust server-side applications with secure APIs, efficient data handling, and scalable architecture patterns.</p>
+                </div>
+
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">Google AdSense</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Chrome DevTools</span>
+                    </div>
+                    <p>Leveraging modern development tools and platforms for efficient workflow, deployment, analytics, and monetization strategies.</p>
+                </div>
+            </div>
+
+            <div class="learning-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="learning-card glass-card">
+                    <h3><i class="fas fa-rocket"></i> Currently Learning</h3>
+                    <div class="learning-list">
+                        <span class="learning-tag">System Design</span>
+                        <span class="learning-tag">PostgreSQL</span>
+                        <span class="learning-tag">AWS</span>
+                        <span class="learning-tag">Three.js</span>
+                        <span class="learning-tag">Docker</span>
+                        <span class="learning-tag">Microservices</span>
+                    </div>
+                    <p>Continuously expanding my skillset to build more scalable and sophisticated applications. Always learning, always growing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to build something amazing?</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card glass-card">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!</p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:RAHULANSHU@icloud.com" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <p>RAHULANSHU@icloud.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/itsrahulanshu" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>GitHub</h4>
+                                    <p>@itsrahulanshu</p>
+                                </div>
+                            </a>
+
+                            <a href="https://x.com/rahulanshu06" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Twitter</h4>
+                                    <p>@rahulanshu06</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Rahulanshu. Built with HTML5, CSS3 & JavaScript</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/itsrahulanshu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/rahulanshu06" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:RAHULANSHU@icloud.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
